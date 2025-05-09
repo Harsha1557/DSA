@@ -1,0 +1,140 @@
+static block:- 
+static block will be created with just static key word.
+it will call automatically, no need to call with either object or class.
+Static method:-
+for static method no need to call with object ,you can directly with class name.
+and here static will act as instance or object. 
+constructor:-
+constructors are used to intialize the objects.
+for every class there will be a default constructor.
+when ever we create an object constructor will be called than object will be created.
+constructor having class name and method properties.
+
+public class p1{
+public static void main(String[] args){
+	Demo d1 = new Demo();
+	Demo d2 = new Demo();
+}}
+class Demo{
+    static{
+        System.out.println("static block");
+    }
+    Demo(){
+        System.out.println("constructor");
+    }
+}
+
+
+anther code:-
+
+
+class Main{
+    public static void main(String args[]){
+        Student obj = new Student();
+        obj.setAge(24);
+        int res = obj.getAge();
+        System.out.println(res);
+        
+        
+        obj.setName("harsha");  
+        String rep = obj.getName();
+        System.out.println(rep);
+        
+        obj.setErp(123456);
+        long red = obj.getErp();
+        System.out.println(red);
+        
+        obj
+    }
+}
+
+class Student{
+    int age; 
+    String name; 
+    boolean passedout;
+    float marks;
+    long erp;
+    void setAge(int age1){
+        this.age = age1;
+    }
+    int getAge(){
+        return age;
+    }
+    void setName(String name1){
+        this.name = name1;
+    }
+    String getName(){
+        return name;
+    }
+    void setPassedout(boolean passedout1){
+        this.passedout = passedout1;
+    }
+    boolean getPassedout(){
+         return passedout;
+    }
+    void setMarks(float marks1){
+        this.marks = marks1;
+    }
+    float getMarks(){
+         return marks;
+    }
+    void setErp(long erp1){
+        this.erp = erp1;
+    }
+    long getErp(){
+        return erp;
+    }
+    
+}
+
+0 1 1 2 3 5 8 13 21 34 55 89 144
+
+Febinocci series
+class Main{
+    public static void main(String args[]){
+        Person obj = new Person();
+        int res = obj.fib(7);
+        System.out.println(res);
+    }
+}
+class Person{
+    int fib(int n){
+        if(n<2){
+            return n;
+        }
+        else{
+            return fib(n-1) + fib(n-2);
+        }
+    }
+}
+
+
+CONDITIONAL STATEMNTS	
+if, else
+else if
+and swithch case
+contitional statements are used to check the condition and to print that relavent block in constant time.
+
+control statemnts:
+1.entry control loops.
+example:- for & while.
+when we know the range , we will use for loop or prefered to us eforr loop.
+when we don't know the range , we will prefer ro use while loop.
+
+int[] arr = {1,2,3,4,5};
+for(int i =0;i<n;i++){
+	return arr[i];
+}
+
+2. exit control loops.
+example:- 
+
+we have to print reverse of {123}
+
+class Main{
+    public static void main(String args[]){
+        int a = 123;
+        int b = 123%10;
+        int c = 123/
+    }
+}

@@ -1,0 +1,111 @@
+SWITCH CASE:-
+-cases have to be the same type as expressions, must be a constant or literal.
+- duplicates case values are not allowed
+-break is use to terminate the sequence
+-if break is not used, it will continue to next case
+-default will execute when none of the above does
+-if default is not at the end, put break after it
+
+SYNTAX:-
+SWITCH(expression){
+	case:
+		statement;
+		break;
+		default:
+		  statement;
+}
+
+1-)
+
+class Main {
+    public static void main(String[] args) {
+    int n = 1;
+    String day;
+    
+    switch(n){
+        case 1:
+            day = "monday";
+            break;
+        case 2:
+            day = "tuesday";
+            break;
+        case 3:
+            day = "wednesday";
+            break;
+         case 4:
+            day = "thursday";
+            break;
+            
+         case 5:
+            day = "friday";
+            break;  
+            
+         case 6:
+            day = "saturday";
+            break;
+        
+         case 7:
+            day = "sundayday";
+            break;
+        default:
+            day = "invalid";
+        
+    }
+    
+    System.out.println(day);
+    
+    
+    }
+}
+
+
+2-)
+
+class Main {
+    public static void main(String[] args) {
+    int n = 1;
+    
+    switch(n){
+        case 1 -> System.out.println("monday");
+        case 2 -> System.out.println("tuesday");
+        case 3 -> System.out.println("wednesday");
+        case 4 -> System.out.println("thursday");
+        case 5 -> System.out.println("friday");
+        case 6 -> System.out.println("saturday");
+        case 7 -> System.out.println("sunday");
+        default -> System.out.println("invalid day");
+    }
+    
+    }
+}
+TERNARY OPERATOR:-
+Enhaced if else:
+String result = (n==5) ?("yes") : ("no");
+System.out.println(result);
+
+
+ENHANCED FOR LOOP:-
+in collections we dont have index values ,in those situations we have to use for each loop.
+examle:-
+int[] arr = {1,2,3,4,5};
+for(int var: arr){
+    System.out.println(var);
+}
+
+
+3-)
+
+System.out.println();
+        
+        for(int i=1; i<=n; i++){
+            for (int j=i; j<=n; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+OUTPUT:-
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
